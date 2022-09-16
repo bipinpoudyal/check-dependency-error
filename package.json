@@ -1,0 +1,24 @@
+{
+  "name": "check-dependency-error",
+  "version": "1.0.0",
+  "description": "repo to demonstrate check dependency error",
+  "repository": "https://github.com/bipinpoudyal/check-dependency-error.git",
+  "author": "Bipin Poudyal <bipinpdl@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "package-a/**",
+      "package-b/**"
+    ],
+    "nohoist": [
+      "**/resolve"
+    ]
+  },
+  "scripts": {
+    "check-dependencies": "yarn check-dependency-version-consistency ."
+  },
+  "devDependencies": {
+    "check-dependency-version-consistency": "^3.0.1"
+  }
+}
