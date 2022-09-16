@@ -8,8 +8,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "package-a/**",
-      "package-b/**"
+      "packages/**"
     ],
     "nohoist": [
       "**/resolve"
